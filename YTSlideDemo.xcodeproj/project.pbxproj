@@ -15,6 +15,9 @@
 		71BEC5901F317FA90032F252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71BEC58E1F317FA90032F252 /* LaunchScreen.storyboard */; };
 		71BEC59B1F317FA90032F252 /* YTSlideDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BEC59A1F317FA90032F252 /* YTSlideDemoTests.m */; };
 		71BEC5A61F317FA90032F252 /* YTSlideDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BEC5A51F317FA90032F252 /* YTSlideDemoUITests.m */; };
+		71BEC5B71F31818B0032F252 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BEC5B41F31818B0032F252 /* LeftViewController.m */; };
+		71BEC5B81F31818B0032F252 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BEC5B61F31818B0032F252 /* NextViewController.m */; };
+		71BEC5BC1F31819B0032F252 /* CKLeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71BEC5BB1F31819B0032F252 /* CKLeftSlideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		71BEC5A11F317FA90032F252 /* YTSlideDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YTSlideDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BEC5A51F317FA90032F252 /* YTSlideDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YTSlideDemoUITests.m; sourceTree = "<group>"; };
 		71BEC5A71F317FA90032F252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71BEC5B31F31818B0032F252 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		71BEC5B41F31818B0032F252 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		71BEC5B51F31818B0032F252 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		71BEC5B61F31818B0032F252 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		71BEC5BA1F31819B0032F252 /* CKLeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKLeftSlideViewController.h; sourceTree = "<group>"; };
+		71BEC5BB1F31819B0032F252 /* CKLeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKLeftSlideViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +110,15 @@
 		71BEC57F1F317FA90032F252 /* YTSlideDemo */ = {
 			isa = PBXGroup;
 			children = (
+				71BEC5B91F31819B0032F252 /* CKLeftSlide */,
 				71BEC5831F317FA90032F252 /* AppDelegate.h */,
 				71BEC5841F317FA90032F252 /* AppDelegate.m */,
 				71BEC5861F317FA90032F252 /* ViewController.h */,
 				71BEC5871F317FA90032F252 /* ViewController.m */,
+				71BEC5B31F31818B0032F252 /* LeftViewController.h */,
+				71BEC5B41F31818B0032F252 /* LeftViewController.m */,
+				71BEC5B51F31818B0032F252 /* NextViewController.h */,
+				71BEC5B61F31818B0032F252 /* NextViewController.m */,
 				71BEC5891F317FA90032F252 /* Main.storyboard */,
 				71BEC58C1F317FA90032F252 /* Assets.xcassets */,
 				71BEC58E1F317FA90032F252 /* LaunchScreen.storyboard */,
@@ -138,6 +152,15 @@
 				71BEC5A71F317FA90032F252 /* Info.plist */,
 			);
 			path = YTSlideDemoUITests;
+			sourceTree = "<group>";
+		};
+		71BEC5B91F31819B0032F252 /* CKLeftSlide */ = {
+			isa = PBXGroup;
+			children = (
+				71BEC5BA1F31819B0032F252 /* CKLeftSlideViewController.h */,
+				71BEC5BB1F31819B0032F252 /* CKLeftSlideViewController.m */,
+			);
+			path = CKLeftSlide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +230,7 @@
 				TargetAttributes = {
 					71BEC57C1F317FA90032F252 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = WEEDGBG93S;
+						DevelopmentTeam = HM5T4U55XX;
 						ProvisioningStyle = Automatic;
 					};
 					71BEC5951F317FA90032F252 = {
@@ -276,7 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71BEC5B81F31818B0032F252 /* NextViewController.m in Sources */,
+				71BEC5BC1F31819B0032F252 /* CKLeftSlideViewController.m in Sources */,
 				71BEC5881F317FA90032F252 /* ViewController.m in Sources */,
+				71BEC5B71F31818B0032F252 /* LeftViewController.m in Sources */,
 				71BEC5851F317FA90032F252 /* AppDelegate.m in Sources */,
 				71BEC5821F317FA90032F252 /* main.m in Sources */,
 			);
@@ -429,8 +455,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WEEDGBG93S;
+				DEVELOPMENT_TEAM = HM5T4U55XX;
 				INFOPLIST_FILE = YTSlideDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TonyAng.YTSlideDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,8 +468,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WEEDGBG93S;
+				DEVELOPMENT_TEAM = HM5T4U55XX;
 				INFOPLIST_FILE = YTSlideDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TonyAng.YTSlideDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

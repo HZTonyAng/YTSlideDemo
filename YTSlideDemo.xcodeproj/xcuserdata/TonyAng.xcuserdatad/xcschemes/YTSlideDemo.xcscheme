@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "71BEC57C1F317FA90032F252"
+               BuildableName = "YTSlideDemo.app"
+               BlueprintName = "YTSlideDemo"
+               ReferencedContainer = "container:YTSlideDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "71BEC5951F317FA90032F252"
+               BuildableName = "YTSlideDemoTests.xctest"
+               BlueprintName = "YTSlideDemoTests"
+               ReferencedContainer = "container:YTSlideDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "71BEC5A01F317FA90032F252"
+               BuildableName = "YTSlideDemoUITests.xctest"
+               BlueprintName = "YTSlideDemoUITests"
+               ReferencedContainer = "container:YTSlideDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "71BEC57C1F317FA90032F252"
+            BuildableName = "YTSlideDemo.app"
+            BlueprintName = "YTSlideDemo"
+            ReferencedContainer = "container:YTSlideDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "71BEC57C1F317FA90032F252"
+            BuildableName = "YTSlideDemo.app"
+            BlueprintName = "YTSlideDemo"
+            ReferencedContainer = "container:YTSlideDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "71BEC57C1F317FA90032F252"
+            BuildableName = "YTSlideDemo.app"
+            BlueprintName = "YTSlideDemo"
+            ReferencedContainer = "container:YTSlideDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

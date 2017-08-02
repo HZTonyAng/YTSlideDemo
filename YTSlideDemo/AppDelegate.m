@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "LeftViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    UINavigationController *main = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
+    CKLeftSlideViewController *root = [[CKLeftSlideViewController alloc]initWithLeftVc:[LeftViewController new] mainVc:main];
+    self.leftSlideVc = root;
+    self.window.rootViewController = root;
+    [self.window makeKeyAndVisible];
+    [[UINavigationBar appearance] setTintColor:[UIColor blackColor]];
     return YES;
 }
 

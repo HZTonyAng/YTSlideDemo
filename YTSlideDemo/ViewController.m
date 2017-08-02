@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "AppDelegate.h"
+#import "NextViewController.h"
+#import "CKLeftSlideViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,8 +19,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"YTSlideDemo";
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(itemAction)];
+    UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    spacer.width = -10.f;
+    self.navigationItem.leftBarButtonItems = @[spacer,item];
 }
 
+-(void)itemAction{
+    NSLog(@"Left");
+    CKLeftSlideViewController *leftSlide = (CKLeftSlideViewController *)[((AppDelegate *)[UIApplication sharedApplication].delegate) leftSlideVc];
+    [leftSlide openLeftView];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
